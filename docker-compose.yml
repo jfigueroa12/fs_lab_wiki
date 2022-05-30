@@ -7,11 +7,11 @@ services:
       - "8000:80"
     volumes:
     - type: volume
-      source: dokuwiki_data
+      source: macwiki_data
       target: /var/www/html/
 
 
 volumes:
-  dokuwiki_data:
+  macwiki_data:
     external:
-      name: dokuwiki_data
+      name: macwiki_data
